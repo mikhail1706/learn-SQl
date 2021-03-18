@@ -42,7 +42,7 @@ SELECT cust_id, cust_type_cd, fed_id, fed_id REGEXP '.{3}.{2}.{4}' is_ss_no_fo
 INSERT INTO string_tbl (text_fld) VALUES ('This string was 29 characters');
 UPDATE string_tbl SET text_fld = CONCAT(text_fld, ', but now it is longer');
 
-select text_fld from string_tbl;
+SELECT text_fld FROM string_tbl;
 
 SELECT CONCAT(fname, ' ', lname, ' has been a ', title, ' since ', start_date) emp_narrative
 FROM employee
